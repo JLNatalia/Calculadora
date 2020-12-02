@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora básica con JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="calculadora.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="pantalla" name="pantalla" placeholder="0" disabled></td>
+        </tr>
+        <tr>
+            <td><input class="numeros" type="button" id="siete" name="siete" value="7" onclick="marcar_digito(this.value)"></td>
+            <td><input class="numeros" type="button" id="ocho" name="ocho" value="8" onclick="marcar_digito(this.value)"></td>
+            <td><input class="numeros" type="button" id="nueve" name="nueve" value="9" onclick="marcar_digito(this.value)"></td>
+            <td><input class="boton" type="button" id="division" name="division" value="/" onclick="marcar_operacion(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input class="numeros" type="button" id="cuatro" name="cuatro" value="4" onclick="marcar_digito(this.value)"></td>
+            <td><input class="numeros" type="button" id="cinco" name="cinco" value="5" onclick="marcar_digito(this.value)"></td>
+            <td><input class="numeros" type="button" id="seis" name="seis" value="6" onclick="marcar_digito(this.value)"></td>
+            <td><input class="boton" type="button" id="multiplicacion" name="multiplicacion" value="x" onclick="marcar_operacion(this.value)"></td>
+        </tr>
+        <tr>
+            <td><input class="numeros" type="button" id="uno" name="uno" value="1" onclick="marcar_digito(this.value)"></td>
+            <td><input class="numeros" type="button" id="dos" name="dos" value="2" onclick="marcar_digito(this.value)"></td>
+            <td><input class="numeros" type="button" id="tres" name="tres" value="3" onclick="marcar_digito(this.value)"></td>
+            <td><input class="boton" type="button" id="resta" name="resta" value="-" onclick="marcar_operacion(this.value)"></td>
+        </tr>
+        <tr>
+            <!-- <td><input class="boton" type="button" id="coma" name="coma" value="," onclick="es_coma(this.value)"></td> -->
+            <td><input class="numeros" type="button" id="cero" name="cero" value="0" onclick="marcar_digito(this.value)"></td>
+            <!-- Borrar colspan cuando introduzcamos la , decimal -->
+            <td colspan="2"><input class="boton" type="button" id="igual" name="igual" value="=" onclick="marcar_operacion(this.value)"></td>
+            <td><input class="boton" type="button" id="suma" name="suma" value="+" onclick="marcar_operacion(this.value)"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

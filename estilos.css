@@ -1,0 +1,63 @@
+table,
+tr,
+td,
+input {
+    background-color: black;
+    border: 0;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17.5px;
+    font-weight: bold;
+    height: 35px;
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    width: 50px;
+}
+
+input:disabled {
+    color: black
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+#pantalla {
+    background-color: rgb(192, 192, 192);
+    padding-right: 10px;
+    text-align: end;
+    width: 218px;
+}
+
+::placeholder {
+    color: black;
+}
+
+.numeros {
+    background-color: white;
+    cursor: pointer;
+}
+
+.numeros:active {
+    background-color: rgb(235, 197, 31);
+}
+
+.boton {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.boton:active {
+    background-color: rgb(235, 197, 31);
+}
+
+.boton:disabled {
+    color: black;
+}
+
+#igual {
+    /* borrar cuando se añada la tecla de la coma */
+    width: 110px;
+}
